@@ -1,14 +1,13 @@
 name: Auto Comment
 on:
   issues:
+    types:opened
+      - opened
+     
+  pull_request:opened
     types:
       - opened
-      - closed
-      - assigned
-  pull_request:
-    types:
-      - opened
-      - closed
+ 
 
 jobs:
   run:
